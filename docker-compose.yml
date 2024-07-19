@@ -2,11 +2,11 @@ version: "3"
 
 services:
   database-name:
-    container_name: database-name
+    container_name: api-rocketseat
     image: postgres # or mysql or mariadb etc
     ports:
-      - 5432:5432 # first is host port, second is container port
+      - 5433:5433 # first is host port, second is container port
     environment:
       - POSTGRES_USER=docker
-      - POSTGRES_PASSWORD=entcar
-      - POSTGRES_DB=databaseName
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=api-rocketseat
